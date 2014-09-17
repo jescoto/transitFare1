@@ -1,0 +1,165 @@
+.navbar-inverse {
+  background-color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  background-color: #1cb3ff;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #bababa;
+}
+.dropdown-menu {
+  background-color: #ffffff;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: #428bca;
+}
+.navbar-inverse {
+  background-image: none;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-image: none;
+}
+.navbar-inverse {
+  border-color: #d1d1d1;
+}
+.navbar-inverse .navbar-brand {
+  color: #999999;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #999999;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+}
+.dropdown-menu > li > a {
+  color: #333333;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #999999;
+}
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-bottom-color: #999999;
+}
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+  border-bottom-color: #ffffff;
+}
+header {
+  background: #F8F8F8;
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.24);
+}
+body {
+  background-color: #028acf;
+}
+.top50 {
+  margin-top: 50px;
+}
+.cards {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.card {
+  width: 100%;
+  background: #F8F8F8;
+  border: 0px solid #E8E8E8;
+  padding: 24px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.card-title {
+  font-family: Roboto-Medium;
+  font-size: 20px;
+  color: rgba(74, 73, 74, 0.87);
+  line-height: 24px;
+  text-align: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.card-body {
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  color: rgba(74, 73, 74, 0.54);
+  line-height: 14px;
+  text-align: left;
+  line-height: 1.4;
+}
+.line {
+  width: 50%;
+  height: 1px;
+  background-color: #bababa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-btm {
+  text-align: left;
+  color: #028acf;
+  margin-left: -10px;
+  position: absolute;
+  bottom: 40px;
+}
+.waves-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+#row2 {
+  margin-top: 95px;
+}
+.fade-out {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ffffff', endColorstr='#00ffffff', GradientType=0);
+  /* IE6-9 */
+
+}
+.fade-out-text {
+  color: rgba(0, 0, 0, 0.1);
+}
