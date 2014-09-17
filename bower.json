@@ -1,0 +1,25 @@
+{
+  "name": "transitFare",
+  "version": "1.0.0",
+  "authors": [
+    "jescoto"
+  ],
+  "description": "home page",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "http://transitfare.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.4.0"
+  }
+}
