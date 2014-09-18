@@ -64,6 +64,7 @@
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
+            <span id="navSlider"></span>
             <li class="active"><a href="./">Home</a></li>
             <li><a href="#">Our System</a></li>
             <li><a href="#">Research</a></li>
@@ -212,6 +213,7 @@
       $(document).ready(function() {
         $('#full').fullpage({
           scrollOverflow: true,
+          resize: false,
           scrollingSpeed: 1000,
           verticalCentered: false,
           autoscrolling: true,
