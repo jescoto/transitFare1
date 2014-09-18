@@ -87,6 +87,9 @@ body {
 .top50 {
   margin-top: 50px;
 }
+.btm50 {
+  margin-bottom: 50px;
+}
 .cards {
   text-align: center;
   padding-top: 40px;
@@ -232,6 +235,16 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   word-break: keep-all;
+}
+.footer {
+  background-color: #4a4a4a;
+  height: 200px;
+}
+.footer-logo {
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f8f8f8;
 }
 @media (min-width: 992px) {
   .headline-text {
