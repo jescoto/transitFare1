@@ -11,7 +11,7 @@
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bower_components/Waves/dist/waves.min.css" />
-
+    <link href="public/css/animate.css" rel="stylesheet">
     <link href="public/css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -46,7 +46,12 @@
   </div>
 </header>
   <div class="container top50">
-    <div class="row">
+  <div class="scroll-text">
+  <span class="animated zoomInDown">Scroll</span>
+  <br>
+  <img src="../public/img/arrow.png" width="30" height="auto">
+  </div>
+    <div class="row" id="row1">
       <div class="cards">
         <!-- Card 1 -->
         <div class="col-md-4 col-sm-6">
@@ -107,17 +112,13 @@
       <div class="cards">
         <!-- Card 1 -->
         <div class="col-md-4 col-sm-6">
-          <div class="card fade-out">
+          <div class="card">
             <div class="card-title">
-              <span class="fade-out-text">Smart Card <br>Fare Collection</span>
+              <span class="">Sample <br>Headline</span>
             </div>
-            <div class="line fade-out"></div>
-            <div class="card-body fade-out-text">
-              Making the jump from traditional fare media
-              to contactless smart cards is the easy part. 
-
-              Picking the right partner to make the journey 
-              a success is the hard part.
+            <div class="line"></div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum venenatis ullamcorper. Nulla vulputate ex vitae turpis commodo feugiat. Integer placerat magna at risus rhoncus porta. Nullam interdum blandit nisl condimentum pellentesque.
             </div>
             <div class="btn-btm">
               <a href="#" class="waves-effect waves-button">Read more</a>
@@ -129,7 +130,7 @@
         <div class="col-md-4 col-sm-6">
           <div class="card">
             <div class="card-title">
-              Automated <br>People Counting
+              <span class="">Sample <br>Headline</span>
             </div>
             <div class="line"></div>
             <div class="card-body">
@@ -142,10 +143,10 @@
           
         </div><!-- col-md-4 -->
         <!-- Card 3 -->
-        <div class="col-md-4 col-sm-6 ">
+        <div class="col-md-4 col-sm-6">
           <div class="card">
             <div class="card-title">
-              Passenger <br>Information
+              <span class="">Sample <br>Headline</span>
             </div>
             <div class="line"></div>
             <div class="card-body">
@@ -167,8 +168,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/Waves/dist/waves.min.js"></script>
+    <script src="../public/js/wow.min.js"></script>
+    <script src="../public/js/waypoints.min.js"></script>
+    <script src="../public/js/main.js"></script>
     <script type="text/javascript">
             Waves.displayEffect();
+            new WOW().init();
         </script>
   </body>
 </html>

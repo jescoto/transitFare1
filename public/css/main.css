@@ -81,6 +81,7 @@ header {
 }
 body {
   background-color: #028acf;
+  height: 2000px;
 }
 .top50 {
   margin-top: 50px;
@@ -95,7 +96,7 @@ body {
   background: #F8F8F8;
   border: 0px solid #E8E8E8;
   padding: 24px;
-  height: 300px;
+  height: 400px;
   margin-bottom: 20px;
 }
 .card-title {
@@ -135,7 +136,8 @@ body {
   margin-top: 10px;
 }
 #row2 {
-  margin-top: 95px;
+  margin-top: 0px;
+  opacity: 0;
 }
 .fade-out {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
@@ -162,4 +164,13 @@ body {
 }
 .fade-out-text {
   color: rgba(0, 0, 0, 0.1);
+}
+.scroll-text {
+  position: fixed;
+  width: 100%;
+  bottom: 40px;
+  left: 0px;
+  color: #f8f8f8;
+  font-size: 14px;
+  text-align: center;
 }
