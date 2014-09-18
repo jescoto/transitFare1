@@ -1,3 +1,7 @@
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,100);
+@roboto: 'Roboto', sans-serif;
+
 // Colors
 
 @lightB: #028ACF;
@@ -5,6 +9,11 @@
 @darkG: #4A4A4A;
 @white: #f8f8f8;
 @grey: #bababa;
+
+//
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
 
 // Bootstrap override
 .navbar-inverse { background-color: #FFFFFF}
@@ -111,7 +120,6 @@ body {
 
 #row2 {
 	margin-top: 0px;
-	opacity: 0;
 }
 
 .fade-out {
@@ -129,15 +137,95 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 }
 
 .scroll-text {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	bottom: 40px;
 	left: 0px;
 	color: @white;
 	font-size: 14px;
 	text-align: center;
+	font-weight: 300;
 }
 
+.scroll-text img {
+	width: 50px;
+	height: auto;
+	margin-top: 10px;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#scroll-word {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+#hello {
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+#line2 {
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+#board {
+	width: 100%;
+	background-color: @darkB;
+	position: relative;
+	top: 0px;
+	z-index: 10000;
+}
+
+.logo-top {
+	margin-top: 20px;
+}
+
+.logo-top img {
+	margin-left: -5px;
+}
+
+.headline {
+	margin-top: 100px;
+}
+
+.headline-text {
+	font-size: 1.5em;
+	color: white;
+	font-family: @roboto;
+	font-weight: 500;
+	word-break: keep-all;
+}
+
+
+// Media 
+
+@media(min-width: @screen-md-min) {
+	.headline-text {
+	font-size: 3em;
+	color: white;
+	font-family: @roboto;
+	font-weight: 500;
+	word-break: keep-all;
+}
+}
 
 
 

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,100);
 .navbar-inverse {
   background-color: #ffffff;
 }
@@ -137,7 +138,6 @@ body {
 }
 #row2 {
   margin-top: 0px;
-  opacity: 0;
 }
 .fade-out {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
@@ -166,11 +166,79 @@ body {
   color: rgba(0, 0, 0, 0.1);
 }
 .scroll-text {
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 40px;
   left: 0px;
   color: #f8f8f8;
   font-size: 14px;
   text-align: center;
+  font-weight: 300;
+}
+.scroll-text img {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+#scroll-word {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+#hello {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+#line2 {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+#board {
+  width: 100%;
+  background-color: #0e5b83;
+  position: relative;
+  top: 0px;
+  z-index: 10000;
+}
+.logo-top {
+  margin-top: 20px;
+}
+.logo-top img {
+  margin-left: -5px;
+}
+.headline {
+  margin-top: 100px;
+}
+.headline-text {
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  word-break: keep-all;
+}
+@media (min-width: 992px) {
+  .headline-text {
+    font-size: 3em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    word-break: keep-all;
+  }
 }
