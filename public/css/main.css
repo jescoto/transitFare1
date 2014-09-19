@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,100);
-/* Bootstrap override
+/* Fonts */
+/* Colors */
+/* */
+/* Bootstrap override 
 .navbar-inverse { background-color: #FFFFFF}
 .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #1CB3FF}
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #BABABA}
@@ -30,12 +33,17 @@ body {
   background-color: #028acf;
   height: 2000px;
 }
-.top50 {
+/* Color classes */.blue {
+  background-color: #0e5b83;
+  color: #f8f8f8;
+}
+/* helper classes */.top50 {
   margin-top: 50px;
 }
 .btm50 {
   margin-bottom: 50px;
 }
+/* end helpers */
 .cards {
   text-align: center;
   padding-top: 40px;
@@ -54,9 +62,18 @@ body {
   transition: all 0.3s ease-out;
 }
 .card:hover {
+  background-color: #f8f8f8;
   -webkit-mask-image: none;
   -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.card:hover .line {
+  background-color: #d7182a;
+  height: 2px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -81,10 +98,14 @@ body {
 }
 .line {
   width: 50%;
-  height: 1px;
+  height: 2px;
   background-color: #bababa;
   margin-top: 10px;
   margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .btn-btm {
   text-align: left;
@@ -98,6 +119,95 @@ body {
   padding-right: 10px;
   margin-top: 10px;
 }
+/* card 2 */
+.card2 {
+  width: 100%;
+  background: #f8f8f8;
+  border: 0px solid #E8E8E8;
+  padding: 0px;
+  height: 400px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.card2:hover {
+  background-color: #f8f8f8;
+  -webkit-mask-image: none;
+  -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.card2:hover .line2 {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #bababa;
+  height: 1px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.card2:hover .card2-title {
+  background-color: #0e5b83;
+  color: #f8f8f8;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.card2-title {
+  font-family: Roboto-Medium;
+  font-size: 20px;
+  color: rgba(74, 73, 74, 0.87);
+  line-height: 24px;
+  text-align: left;
+  padding-left: 28px;
+  padding-top: 24px;
+  padding-right: 28px;
+  background-color: #f8f8f8;
+  padding-bottom: 10px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.line2 {
+  width: 50%;
+  height: 1px;
+  background-color: #bababa;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.card-body2 {
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  color: rgba(74, 73, 74, 0.54);
+  line-height: 14px;
+  text-align: left;
+  line-height: 1.4;
+  padding: 24px;
+  padding-top: 0px;
+}
+.btn-btm2 {
+  text-align: left;
+  color: #028acf;
+  margin-left: -10px;
+  position: absolute;
+  bottom: 40px;
+  padding-left: 24px;
+}
+/* end card 2 */
 #row2 {
   margin-top: 0px;
 }
@@ -205,6 +315,16 @@ body {
   padding-bottom: 20px;
   border-bottom: 1px solid #f8f8f8;
 }
+/*
+.linetop:hover {
+	border-top: 3px solid @darkG;
+	-webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+*/
+/* Media */
 @media (min-width: 992px) {
   .headline-text {
     font-size: 3em;
@@ -281,4 +401,25 @@ body {
     color: #0e5b83;
     background-color: #f8f8f8;
   }
+}
+.navbar-default .navbar-nav > .active > a {
+  border-top: 2px solid #0e5b83;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.navbar-default .navbar-nav > li a {
+  border-top: 2px solid #f8f8f8;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.navbar-default .navbar-nav > li a:hover {
+  border-top: 2px solid #bababa;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
