@@ -465,7 +465,7 @@ body {
     font-weight: 300;
   }
 }
-@media (max-width: 992px) and (orientation: portait) {
+@media (max-width: 992px) {
   .logo-top img {
     width: 100px;
   }
@@ -516,6 +516,11 @@ body {
     font-size: 14px;
     text-align: center;
     font-weight: 300;
+  }
+  .card,
+  .card2,
+  .card3 {
+    height: 300px;
   }
 }
 .navbar-default {
