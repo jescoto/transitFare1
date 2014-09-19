@@ -39,6 +39,11 @@
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
 */
+img[src$=".png"] {
+                   image-rendering: auto;         /* Firefox */
+                  }
+
+
 header {
 
 background: #F8F8F8;
@@ -138,7 +143,8 @@ body {
 }
 
 .card-title {
-	font-family: Roboto-Medium;
+	font-family: @roboto;
+	font-weight: 300;
 	font-size: 20px;
 	color: rgba(74,73,74,0.87);
 	line-height: 24px;
@@ -148,7 +154,7 @@ body {
 }
 
 .card-body {
-	font-family: Roboto-Regular;
+	font-family: @roboto;
 	font-size: 13px;
 	color: rgba(74,73,74,0.54);
 	line-height: 14px;
@@ -230,7 +236,8 @@ body {
 }
 
 .card2-title {
-	font-family: Roboto-Medium;
+	font-family: @roboto;
+	font-weight: 300;
 	font-size: 20px;
 	color: rgba(74,73,74,0.87);
 	line-height: 24px;
@@ -260,7 +267,7 @@ body {
 }
 
 .card-body2 {
-	font-family: Roboto-Regular;
+	font-family: @roboto;
 	font-size: 13px;
 	color: rgba(74,73,74,0.54);
 	line-height: 14px;
@@ -391,7 +398,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 }
 
 #line-circle {
-	top:20%;
+	top:10%;
 	height: 200px;
 	position: relative;
 	left: 20px;
