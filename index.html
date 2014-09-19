@@ -26,7 +26,12 @@
   <div id="full">
   <!-- Section -->
     <div class="section" id="board">
+      <div id="bk">
+        <img src="public/img/line-dot.png" id="line-dot">
+        <img src="public/img/features.png" id="line-circle">
+      </div>
       <div class="row">
+        
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
           <div class="logo-top">
           <img src="public/img/logo-white.png" width="150px" height="auto" alt="logo">
@@ -49,7 +54,7 @@
       </div>
     </div><!-- section -->
     <div class="section" id="main">
-    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -59,16 +64,15 @@
             <span class="icon-bar"></span>
           </button>
           <a href="./" class="navbar-brand">
-            <img src="public/img/logo-blue.png" alt="logo" height="25px" width="auto">
+            <img src="public/img/logo-blue.png" alt="logo" height="20px" width="auto">
           </a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
-            <span id="navSlider"></span>
-            <li class="active"><a href="./">Home</a></li>
-            <li><a href="#">Our System</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li class="active"><a class="linetop waves-effect waves-block" href="./">Home</a></li>
+            <li><a class="linetop waves-effect waves-block" href="#">Our System</a></li>
+            <li><a class="linetop waves-effect waves-block" href="#">Research</a></li>
+            <li><a class="linetop waves-effect waves-block" href="#">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -77,8 +81,8 @@
         <div class="row" id="row1">
           <div class="cards">
             <!-- Card 1 -->
-            <div class="col-md-4 col-sm-6">
-              <div class="card">
+            <div class="col-md-4 col-sm-4">
+              <div class="card waves-float">
                 <div class="card-title">
                   Smart Card <br>Fare Collection
                 </div>
@@ -91,13 +95,13 @@
                   a success is the hard part.
                 </div>
                 <div class="btn-btm">
-                  <a href="#" class="waves-effect waves-button">Read more</a>
+                  <a href="#" class="waves-effect waves-button">Read more </a>
                 </div>
               </div><!-- Card -->
               
             </div><!-- col-md-4 -->
             <!-- Card 2 -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
               <div class="card">
                 <div class="card-title">
                   Automated <br>People Counting
@@ -113,7 +117,7 @@
               
             </div><!-- col-md-4 -->
             <!-- Card 3 -->
-            <div class="col-md-4 col-sm-6 ">
+            <div class="col-md-4 col-sm-4">
               <div class="card">
                 <div class="card-title">
                   Passenger <br>Information
@@ -134,8 +138,8 @@
         <div class="row" id="row2">
           <div class="cards">
             <!-- Card 1 -->
-            <div class="col-md-4 col-sm-6">
-              <div class="card">
+            <div class="col-md-4 col-sm-4">
+              <div class="card waves-effect waves-block">
                 <div class="card-title">
                   <span class="">Sample <br>Headline</span>
                 </div>
@@ -150,24 +154,24 @@
               
             </div><!-- col-md-4 -->
             <!-- Card 2 -->
-            <div class="col-md-4 col-sm-6">
-              <div class="card">
-                <div class="card-title">
+            <div class="col-md-4 col-sm-4">
+              <div class="card2">
+                <div class="card2-title">
                   <span class="">Sample <br>Headline</span>
                 </div>
-                <div class="line"></div>
-                <div class="card-body">
+                <div class="line2"></div>
+                <div class="card-body2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum venenatis ullamcorper. Nulla vulputate ex vitae turpis commodo feugiat. Integer placerat magna at risus rhoncus porta. Nullam interdum blandit nisl condimentum pellentesque.
                 </div>
-                <div class="btn-btm">
+                <div class="btn-btm2">
                   <a href="#" class="waves-effect waves-button">Read more</a>
                 </div>
               </div><!-- Card -->
               
             </div><!-- col-md-4 -->
             <!-- Card 3 -->
-            <div class="col-md-4 col-sm-6">
-              <div class="card">
+            <div class="col-md-4 col-sm-4">
+              <div class="card3">
                 <div class="card-title">
                   <span class="">Sample <br>Headline</span>
                 </div>
@@ -176,7 +180,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum venenatis ullamcorper. Nulla vulputate ex vitae turpis commodo feugiat. Integer placerat magna at risus rhoncus porta. Nullam interdum blandit nisl condimentum pellentesque.
                 </div>
                 <div class="btn-btm">
-                  <a href="#" class="waves-effect waves-button">Read more</a>
+                  <a href="#" class="waves-effect waves-button waves-float">Read more</a>
                 </div>
               </div><!-- Card -->
               
@@ -186,13 +190,62 @@
       </div><!-- Container -->
     
   <footer class="footer">
+    <div class="container">
     <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
+      <div class="col-sm-12">
         <div class="footer-logo">
-          <img src="public/img/logo-white.png" width="75px" height="auto">
+          <img src="public/img/logo-white.png" width="100px" height="auto">
         </div>
       </div>
+    </div><!-- Row -->
+    <div class="row" id="footer-text">
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <ul class="list-unstyled footer-section">
+          <li><b>Our Systems</b></li>
+          <li>Smart Card Fare System</li>
+          <li>Passenger Information</li>
+          <li>People Counting</li>
+          <li>Cash Fare Collection</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <ul class="list-unstyled footer-section">
+          <li><b>Research</b></li>
+          <li>Topic 1</li>
+          <li>Topic 2</li>
+          <li>Topic 3</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <ul class="list-unstyled footer-section">
+          <li class="btm5"><b>Stay Informed</b></li>
+          <li>
+          <form role="form" role="form">
+            <div class="form-group form-group-sm">
+              
+              <input type="text" class="form-control input-sm eighty" id="name" placeholder="Full Name">
+            </div>
+            <div class="form-group form-group-sm">
+             
+              <input type="email" class="form-control input-sm eighty" id="email" placeholder="Enter email">
+            </div>
+            <button type="submit" class="waves-effect waves-button lightG" id="emailSubmit">Submit</button>
+          </form>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3">
+      <ul class="list-unstyled footer-section">
+      <li><b>Contact Us</b></li>
+      <li>TransitFare & Systems</li>
+      <li>125 Don Hillock Drive, Unit 2 </li>
+      <li>Aurora, ON, Canada, L4G 0H8</li> 
+      <li>Phone: 01 (416) 993-2503</li>
+      <li>Online Inquiry</li>
+      </ul>
+      </div>
     </div>
+    </div><!-- Container -->
   </footer>
   </div><!-- Section -->
   </div><!-- fullscreen -->  
@@ -224,6 +277,8 @@
         $("#scroll-word").addClass("animated fadeInDown");
         $("#hello, #line2").addClass("animated fadeIn");
         $(".logo-top").addClass("animated fadeIn");
+        $("#line-dot").addClass("animated fadeInDownBig");
+        $("#line-circle").addClass("animated fadeInUp");
       });
             Waves.displayEffect();
             new WOW().init();
