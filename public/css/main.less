@@ -15,7 +15,7 @@
 @screen-md-min: 992px;
 @screen-lg-min: 1200px;
 
-// Bootstrap override
+/* Bootstrap override
 .navbar-inverse { background-color: #FFFFFF}
 .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #1CB3FF}
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #BABABA}
@@ -36,7 +36,7 @@
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
-
+*/
 header {
 
 background: #F8F8F8;
@@ -60,6 +60,8 @@ body {
 
 // end helpers
 
+
+
 .cards {
 	text-align: center;
 	padding-top: 40px;
@@ -75,6 +77,20 @@ body {
 	padding: 24px;
 	height: 400px;
 	margin-bottom: 20px;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.card:hover {
+    -webkit-mask-image:none;
+    -webkit-box-shadow:  0px 5px 10px 1px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.30);
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .card-title {
@@ -228,5 +244,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 }
 
 
-
+@bgDefault      : @white;
+@bgHighlight    : @white;
+@colDefault     : #424242;
+@colHighlight   : @darkB;
+.navbar-default {
+	background-color: @bgDefault;
+	border-color: @bgHighlight;
+	.navbar-brand {
+		color: @colDefault;
+		&:hover, &:focus { 
+			color: @colHighlight; }}
+	.navbar-text {
+		color: @colDefault; }
+	.navbar-nav {
+		> li {
+			> a {
+				color: @colDefault;
+				&:hover,  &:focus {
+					color: @colHighlight; }}}
+		> .active {
+			> a, > a:hover, > a:focus {
+				color: @colHighlight;
+				background-color: @bgHighlight; }}
+		> .open {
+			> a, > a:hover, > a:focus {
+				color: @colHighlight;
+				background-color: @bgHighlight; }}}
+	.navbar-toggle {
+		border-color: @bgHighlight;
+		&:hover, &:focus {
+			background-color: @bgHighlight; }
+		.icon-bar {
+			background-color: @colDefault; }}
+	.navbar-collapse,
+	.navbar-form {
+		border-color: @colDefault; }
+	.navbar-link {
+		color: @colDefault;
+		&:hover {
+			color: @colHighlight; }}}
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		> li > a {
+			color: @colDefault;
+			&:hover, &:focus {
+				color: @colHighlight; }}
+		> .active {
+			> a, > a:hover, > a:focus, {
+				color: @colHighlight;
+				background-color: @bgHighlight; }}}
+}
 
