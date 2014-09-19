@@ -69,9 +69,15 @@ body {
 #emailSubmit {
 	padding-top: 5px;
 	padding-bottom: 5px;
+	font-size: 12px;
+	margin-top: 0px;
 }
 
 /* helper classes */ 
+
+.btm5 {
+	margin-bottom: 5px;
+}
 
 .top50 {
 	margin-top: 50px;
@@ -79,6 +85,10 @@ body {
 
 .btm50 {
 	margin-bottom: 50px;
+}
+
+.eighty {
+	width: 80%;
 }
 
 /* end helpers */
@@ -425,6 +435,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 	border-bottom: 1px solid @lightG;
 }
 
+.footer-logo img {
+	margin-left: -15px;
+}
+
 .footer-section {
 	margin-top: 20px;
 }
@@ -457,25 +471,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 
 }
 
-@media(min-width: @screen-lg-min) {
+@media (max-width: @screen-md-min) and (orientation: landscape) {
+	.logo-top img {
+		width: 75px;
+		margin-bottom: 30px;
+	}
+
+	.headline {
+	margin-top: 0%;
+	line-height: 1;
+	}
+
 	#bk {
 	position: absolute;
 	top: 0px;
-	width: 90%;
+	width: 100%;
 	height: 100%;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 0%;
+	margin-right: 0%;
 }
 
 #bk img {
-	margin-left: 0px;
+	margin-left: 20px;
 }
 
 #line-dot {
 	width: auto;
 	height: 100%;
 	position: relative;
-	left: 10px;
+	left: 20px;
 	-webkit-animation-duration: 0.75s;
 	animation-duration: 0.75s;
     -webkit-animation-delay: 2s;
@@ -485,10 +509,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 }
 
 #line-circle {
-	height: 25%;
+	height: 40%;
 	max-height: 200px;
 	position: relative;
-	left: 0px;
+	left: -5px;
 	-webkit-animation-duration: 0.75s;
 	animation-duration: 0.75s;
     -webkit-animation-delay: 2.25s;
@@ -497,13 +521,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
   	animation-iteration-count: 1;
 }
 
-
+.scroll-text {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	left: 0px;
+	color: @white;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 300;
+}
 }
 
 
-@media(max-width: @screen-md-min) {
+@media(max-width: @screen-md-min) and (orientation: portait){
+	.logo-top img {
+		width: 100px;
+	}
 	.headline {
-	margin-top: 15%;
+	margin-top: 10%;
 }
 
 	#bk {
