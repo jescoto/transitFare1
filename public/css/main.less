@@ -57,6 +57,19 @@ body {
 	color: @white;
 }
 
+.lightG {
+	background-color: @white;
+	color: @darkG;
+}
+
+#email {
+	margin-bottom: 5px;
+}
+
+#emailSubmit {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
 /* helper classes */ 
 
@@ -78,7 +91,8 @@ body {
 	padding-bottom: 60px;
 }
 
-.card {
+.card,
+.card3 {
 	width: 100%;
 	//margin-left: 5%;
 	//margin-right: 5%;
@@ -255,6 +269,11 @@ body {
 	padding-left: 24px;
 }
 
+.card2:hover .btn-btm2 a {
+	background-color: @grey;
+	color: @white;
+}
+
 /* end card 2 */
 
 
@@ -356,14 +375,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 
 .footer {
 	background-color: @darkG;
-	height: 200px;
+	font-weight: 300;
+	padding-bottom: 40px;
 }
 
 .footer-logo {
 	padding: 10px;
 	padding-top: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid @white;
+	border-bottom: 1px solid @lightG;
+}
+
+.footer-section {
+	margin-top: 20px;
+}
+
+#footer-text {
+	text-align: left;
+	color: @white;
 }
 
 /*
