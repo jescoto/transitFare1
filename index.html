@@ -12,6 +12,7 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bower_components/Waves/dist/waves.min.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="public/css/animate.css" rel="stylesheet">
     <link href="public/css/main2.css" rel="stylesheet">
 
@@ -26,10 +27,6 @@
   <div id="full">
   <!-- Section -->
     <div class="section" id="board">
-      <div id="bk">
-        <img src="public/img/line-dot.png" id="line-dot">
-        <img src="public/img/features.png" id="line-circle">
-      </div>
       <div class="row">
         
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
@@ -44,6 +41,13 @@
             <p class="headline-text" id="line2">
               Where technology meets transit.
             </p>
+            <div class="features">
+            <ul class="list-unstyled">
+              <li><i class="waves-effect logoB" id="one-c"></i> <span id="one">Fare Collection</span></li>
+              <li><i class="waves-effect logoB" id="two-c"></i><span id="two"> Passenger Information </li>
+              <li><i class="waves-effect logoB" id="three-c"></i><span id="three"> People Counting </li>
+            </ul>
+            </div>
           </div>
         </div>
         <div class="scroll-text">
@@ -300,6 +304,11 @@
         $(".logo-top").addClass("animated fadeIn");
         $("#line-dot").addClass("animated fadeInDownBig");
         $("#line-circle").addClass("animated fadeInUp");
+        $("#one, #two, #three").addClass("animated fadeIn");
+        $("#one-c, #two-c, #three-c").addClass("animated bounceIn");
+        $("#board").click(function(){
+          $.fn.fullpage.moveSectionDown();
+        });
       });
             Waves.displayEffect();
             new WOW().init();
