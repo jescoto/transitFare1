@@ -289,6 +289,7 @@
     <script src="public/js/main.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+        var boxWidth = $(".card2").innerWidth();
         $('#full').fullpage({
           scrollOverflow: true,
           resize: false,
@@ -308,6 +309,11 @@
         $("#one-c, #two-c, #three-c").addClass("animated bounceIn");
         $("#board").click(function(){
           $.fn.fullpage.moveSectionDown();
+        });
+        $(".btn-btm2").css("width", boxWidth);
+        $(window).resize(function(){
+          boxWidth = $(".card2").innerWidth();
+          $(".btn-btm2").css("width", boxWidth);
         });
       });
             Waves.displayEffect();

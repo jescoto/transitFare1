@@ -608,6 +608,11 @@ body {
     font-weight: 300;
   }
 }
+@media (max-width: 1200px) {
+  .btn-btm2 {
+    width: 90.6%;
+  }
+}
 @media (max-width: 992px) {
   .features {
     font-size: 16px;
@@ -798,7 +803,7 @@ body {
     background-color: #f8f8f8;
   }
   .btn-btm2 {
-    width: 90.5%;
+    width: 96%;
     bottom: 0px;
   }
 }
