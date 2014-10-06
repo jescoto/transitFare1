@@ -3,7 +3,7 @@
 @roboto: 'Roboto', sans-serif;
 
 /* Colors */
-
+@grey1: #C7D7DB;
 @lightB: #028ACF;
 @darkB: #335469;
 @darkG: #4A4A4A;
@@ -210,6 +210,7 @@ body {
 	padding: 0px;
 	height: 410px;
 	margin-bottom: 50px;
+	cursor: pointer;
 	-webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -235,54 +236,53 @@ body {
 	margin-right: 0px;
 	background-color: @grey;
 	height: 1px;
-	-webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .card2:hover .card2-title {
 	background-color: @darkB;
 	color: @white;
-	-webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .card2:hover .card-body2 {
 	color: @white;
-	-webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .btn-btm2:hover {
 	color: @white;
-	height: 65px;
-	-webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+	height: 85px;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .btn-btm2:hover .btn-btm2-text {
-	padding-top: 15px;
-	-webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+	padding-top: 25px;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .btn-btm2:hover .btn-btm2-text a {
-	color: @white;
-	background-color: @logoB;
+	color: @logoB;
 	text-decoration: none;
-	-webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .card2-title {
@@ -297,10 +297,10 @@ body {
 	padding-right: 24px;
 	background-color: @white;
 	padding-bottom: 10px;
-	-webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
 .line2 {
@@ -343,11 +343,12 @@ body {
 	text-align: left;
 	width: 90.2%;
 	height: 60px;
-	color: @lightB;
+	color: @logoB;
 	background-color: @white;
 	position: absolute;
 	bottom: 50px;
 	padding-left: 0px;
+	cursor: pointer;
 	-webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
@@ -366,7 +367,7 @@ body {
 }
 
 .btn-btm2 a {
-	color: @lightB;
+	color: @logoB;
 	margin-top: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -408,7 +409,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 .scroll-text img {
 	width: 50px;
 	height: auto;
-	margin-top: 20px;
+	margin-top: 30px;
 	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
   -webkit-animation-delay: 3.5s;
@@ -418,6 +419,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 }
 
 #scroll-word {
+	background-color: @white;
+	padding: 6px;
+	color: @midB;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
   -webkit-animation-delay: 4s;
@@ -450,6 +456,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 	position: relative;
 	top: 0px;
 	z-index: 10000;
+	cursor: pointer;
 }
 
 
@@ -510,6 +517,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 	font-family: @roboto;
 	font-weight: 500;
 	word-break: keep-all;
+	line-height: 1;
 }
 
 .footer {
@@ -535,6 +543,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 #footer-text {
 	text-align: left;
 	color: @white;
+}
+
+.footer-section li a {
+	text-decoration: none;
+	color: @white;
+}
+
+.footer-section li a:hover {
+	color: @grey;
 }
 
 /*
@@ -569,7 +586,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 	color: @white;
 	font-size: 1.5em;
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .features ul li {
@@ -580,8 +597,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 	font-size: 0.75em
 }
 
-.cic {
-	
+.chev {
+	padding: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-size: 12px;
+	border-radius: 12px;
+	border: 1.4px solid @logoB;
+	text-align: center;
+	margin-left: 5px;
 }
 
 #one {
@@ -840,7 +864,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 
 
 .navbar-default .navbar-nav > .active > a {
-	border-top: 3px solid @grey;
+	border-top: 3px solid @midB;
+	background-color: #999999;
+	color: white;
+	-webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+} 
+
+.navbar-default .navbar-nav > .active > a:hover {
+	border-top: 3px solid @midB;
+	background-color: #7D7D7D;
+	color: white;
+	/*-webkit-box-shadow:inset 0 0 1px 2px rgba(0,0,0,0.25);
+box-shadow:inset 0 0 1px 2px rgba(0,0,0,0.25);*/
 	-webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
@@ -858,7 +896,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 .navbar-default .navbar-nav > li a:hover {
 	border-top: 3px solid @darkG;
 	background-color: @midB;
-	color: @white;
+	color: white;
 	-webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;

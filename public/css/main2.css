@@ -161,6 +161,7 @@ body {
   padding: 0px;
   height: 410px;
   margin-bottom: 50px;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -184,49 +185,48 @@ body {
   margin-right: 0px;
   background-color: #bababa;
   height: 1px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .card2:hover .card2-title {
   background-color: #335469;
   color: #f8f8f8;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .card2:hover .card-body2 {
   color: #f8f8f8;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .btn-btm2:hover {
   color: #f8f8f8;
-  height: 65px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  height: 85px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .btn-btm2:hover .btn-btm2-text {
-  padding-top: 15px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  padding-top: 25px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .btn-btm2:hover .btn-btm2-text a {
-  color: #f8f8f8;
-  background-color: #4aade2;
+  color: #4aade2;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .card2-title {
   font-family: 'Roboto', sans-serif;
@@ -240,10 +240,10 @@ body {
   padding-right: 24px;
   background-color: #f8f8f8;
   padding-bottom: 10px;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .line2 {
   width: 50%;
@@ -282,11 +282,12 @@ body {
   text-align: left;
   width: 90.2%;
   height: 60px;
-  color: #028acf;
+  color: #4aade2;
   background-color: #f8f8f8;
   position: absolute;
   bottom: 50px;
   padding-left: 0px;
+  cursor: pointer;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -303,7 +304,7 @@ body {
   transition: all 0.5s ease-out;
 }
 .btn-btm2 a {
-  color: #028acf;
+  color: #4aade2;
   margin-top: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -351,7 +352,7 @@ body {
 .scroll-text img {
   width: 50px;
   height: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-delay: 3.5s;
@@ -360,6 +361,11 @@ body {
   animation-iteration-count: infinite;
 }
 #scroll-word {
+  background-color: #f8f8f8;
+  padding: 6px;
+  color: #406982;
+  padding-top: 2px;
+  padding-bottom: 2px;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-delay: 4s;
@@ -389,6 +395,7 @@ body {
   position: relative;
   top: 0px;
   z-index: 10000;
+  cursor: pointer;
 }
 #bk {
   position: absolute;
@@ -440,6 +447,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   word-break: keep-all;
+  line-height: 1;
 }
 .footer {
   background-color: #361d1d;
@@ -460,6 +468,13 @@ body {
 #footer-text {
   text-align: left;
   color: #f8f8f8;
+}
+.footer-section li a {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+.footer-section li a:hover {
+  color: #bababa;
 }
 /*
 .linetop:hover {
@@ -487,13 +502,23 @@ body {
   color: #f8f8f8;
   font-size: 1.5em;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .features ul li {
   margin-top: 10px;
 }
 .features ul li i {
   font-size: 0.75em;
+}
+.chev {
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 12px;
+  border-radius: 12px;
+  border: 1.4px solid #4aade2;
+  text-align: center;
+  margin-left: 5px;
 }
 #one {
   -webkit-animation-duration: 0.75s;
@@ -732,7 +757,21 @@ body {
   color: #335469;
 }
 .navbar-default .navbar-nav > .active > a {
-  border-top: 3px solid #bababa;
+  border-top: 3px solid #406982;
+  background-color: #999999;
+  color: white;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+  border-top: 3px solid #406982;
+  background-color: #7D7D7D;
+  color: white;
+  /*-webkit-box-shadow:inset 0 0 1px 2px rgba(0,0,0,0.25);
+box-shadow:inset 0 0 1px 2px rgba(0,0,0,0.25);*/
+
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -748,7 +787,7 @@ body {
 .navbar-default .navbar-nav > li a:hover {
   border-top: 3px solid #4a4a4a;
   background-color: #406982;
-  color: #f8f8f8;
+  color: white;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
